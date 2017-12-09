@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FirebaseExcercise</title>
+	<meta charset="utf-8">
+	
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.3/moment-with-locales.min.js"></script>
+	
+</head>
+<body>
+
+	<div class="container-fluid">
+		<div class="row">
+                <div class="jumbotron text-center">
+                        <h1>Employee Data Management</h1>
+                        <p>A comprehensive Directory of Employee Billable Hours.</p>
+                        
+                </div>
+			
+			
+        </div>
+
+        <div class="row panel panel-primary">
+                
+                        
+            <div class="panel-heading">Current Employee</div>
+                      
+                        
+            <table class="table">
+                    <thead>
+                            <tr>
+                              <th>Employee Name</th>
+                              <th>Role</th>
+                              <th>Start Date</th>
+                              <th>Months Worked</th>
+                              <th>Monthly Rate($)</th>
+                              <th>Paid Until Today</th>
+                            </tr>
+                          </thead>
+                          <tbody id="addData">
+                            
+                            
+                          </tbody>
+                          
+            </table>
+                      
+
+        </div>
+        <div class="row panel panel-primary">
+
+            <div class="input-group">
+                <span class="input-group-addon" id="basic-addon1">Employee Name</span>
+                <input type="text" class="form-control" placeholder="Employee Name" aria-describedby="basic-addon1" id="name">
+            </div>  
+            <div class="input-group">
+                <span class="input-group-addon" id="basic-addon1">Role</span>
+                <input type="text" class="form-control" placeholder="Role" aria-describedby="basic-addon1" id="role">
+            </div>
+            <div class="input-group">
+                <span class="input-group-addon" id="basic-addon1">Start Date</span>
+                <input type="text" class="form-control" placeholder="Start Date" aria-describedby="basic-addon1" id="start">
+            </div>
+            <div class="input-group">
+                <span class="input-group-addon" id="basic-addon1">Monthly Rate</span>
+                <input type="text" class="form-control" placeholder="Monthly Rate" aria-describedby="basic-addon1" id="rate">
+            </div>
+            <div class="input-group">
+                <input class="btn btn-primary" id="addrow" type="submit" value="Submit">
+            </div>
+            
+            
+            </div>
+            
+         
+			
+		</div>
+	
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="employee.js"></script>
+</body>
+</html>
